@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutIdFromList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF7DA"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/listen" />
+
+        <LinearLayout
+            android:id="@+id/text_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:id="@+id/songName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Song Name"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/artistName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Artist Name"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="03:48"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/homeBtn"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:text="Home"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/nowPlayingBtn"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:text="Playing"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/playlistBtn"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:text="Playlist"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/albumsBtn"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:text="Albums"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

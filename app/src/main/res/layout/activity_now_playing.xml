@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    tools:context="com.example.adriana.musicalapp.NowPlayingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ABC">
+
+        <TextView
+            android:id="@+id/artistName"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/image"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="80dp"
+            android:layout_toLeftOf="@+id/songName"
+            android:layout_toStartOf="@+id/songName"
+            android:text="Artist Name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/backBtn"
+            android:layout_toEndOf="@+id/backBtn"
+            android:layout_toRightOf="@+id/backBtn"
+            android:text="Song Name"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_alignBaseline="@+id/songName"
+            android:layout_alignBottom="@+id/songName"
+            android:layout_toEndOf="@+id/songName"
+            android:layout_toRightOf="@+id/songName"
+            android:gravity="end"
+            android:text="04:22"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/artistName"
+            android:layout_marginTop="46dp"
+            android:layout_toLeftOf="@+id/pauseBtn"
+            android:layout_toStartOf="@+id/pauseBtn"
+            android:text="Prev"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/pauseBtn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/backBtn"
+            android:layout_alignBottom="@+id/backBtn"
+            android:layout_centerHorizontal="true"
+            android:text="Play"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/pauseBtn"
+            android:layout_toEndOf="@+id/pauseBtn"
+            android:layout_toRightOf="@+id/pauseBtn"
+            android:text="Next"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/homeBtn"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/backBtn"
+            android:text="Home"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/playlistBtn"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/backBtn"
+            android:layout_toRightOf="@id/homeBtn"
+            android:text="Playlist"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/songsBtn"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/backBtn"
+            android:layout_toRightOf="@id/playlistBtn"
+            android:text="Songs"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/albumsBtn"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/backBtn"
+            android:layout_toRightOf="@id/songsBtn"
+            android:text="albums"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_alignLeft="@+id/homeBtn"
+            android:layout_alignStart="@+id/homeBtn"
+            android:scaleType="fitXY"
+            android:src="@drawable/playing" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+

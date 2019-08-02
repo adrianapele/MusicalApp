@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:padding="16dp"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    tools:context="com.example.adriana.musicalapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/nowPlayingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#ABC">
+
+            <ImageView
+                android:id="@+id/nowPlayingImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="16dp"
+                android:src="@drawable/nowplaying" />
+
+            <TextView
+                android:id="@+id/nowPlaying"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nowPlayingImg"
+                android:layout_centerHorizontal="true"
+                android:text="Now Playing"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/playlistLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#ABC">
+
+            <ImageView
+                android:id="@+id/playlistImgId"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="16dp"
+                android:src="@drawable/playlist" />
+
+            <TextView
+                android:id="@+id/playlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/playlistImgId"
+                android:layout_centerHorizontal="true"
+                android:text="Playlist"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/albumsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#ABC">
+
+            <ImageView
+                android:id="@+id/albumsImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="16dp"
+                android:src="@drawable/albums" />
+
+            <TextView
+                android:id="@+id/albums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/albumsImg"
+                android:layout_centerHorizontal="true"
+                android:text="Albums"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/songsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ABC">
+
+            <ImageView
+                android:id="@+id/songsImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="16dp"
+                android:src="@drawable/songs" />
+
+            <TextView
+                android:id="@+id/songs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/songsImg"
+                android:layout_centerHorizontal="true"
+                android:text="Songs"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
